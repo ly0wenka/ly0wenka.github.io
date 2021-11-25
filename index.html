@@ -1,162 +1,103 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Timber House</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-   <header class="header" style="background-image: url(img/bg.jpg);">
-        <div class="header__inner">
-            <img src="img/home.png" alt="">
-            <div class="header__name">
-                timber House
-            </div>
-            <a class="header__phone" href="tel:+75852772217">+7 585 277-22-17</a>
-            <div class="header__title">
-                Дома из бруса под ключ
-            </div>
-            <div class="header__sale">
-                <img src="img/sale.png" alt="">
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container">
-            <div class="main__title">
-                Строительство домов и бань из
-                строганного и профилированного бруса
-            </div>
-            <div class="main__text">
-                За 10 лет мы возвели больше 250 домов и бань из бруса
-                ИМЕЕМ БОЛЬШОЙ ОПЫТ В СТРОИТЕЛЬСТВЕ
-                гарантируем качество и надежность всех построенных нами объектов
-                
-                ГАРАНТИЯ НА ДОМА И БАНИ ИЗ БРУСА 3 ГОДА
-            </div>
-            <div class="main__img">
-                <img src="img/main-img.png" alt="">
-            </div>
-            <div class="project">
-                <div class="project__title">
-                    ПРОЕКТЫ ДОМОВ ИЗ БРУСА
-                </div>
-                <div class="project__item">
-                    <div class="project__name">
-                        ДОМ #1
-                    </div>
-                    <div class="project__size">
-                        Размер дома: 6 x 6
-                    </div>
-                    <div class="project__area">
-                        Общая площадь дома: 54 кв. м
-                    </div>
-                    <div class="project__price">
-                        Стоимость - 402 000 рублей
-                    </div>
-                    <div class="project_images">
-                        <div class="project_images-item">
-                            <img src="img/project-1.jpg" alt="">
+    <head>
+        <title>Spritz</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <link id="spritz-css" href="https://sdk.spritzinc.com/js/2.0.16/css/spritz.min.css?1.1.15" rel="stylesheet" type="text/css" />
+        <link href="../styles/SpritzletIframe.css?__inline=true" rel="stylesheet" type="text/css" />
+        <style>
+            .flipX video::-webkit-media-text-track-display {
+                transform: matrix(-1, 0, 0, 1, 0, 0) !important;
+            }
+            .flipXY video::-webkit-media-text-track-display {
+                transform: matrix(-1, 0, 0, -1, 0, 0) !important;
+            }
+            .flipXYX video::-webkit-media-text-track-display {
+                transform: matrix(1, 0, 0, -1, 0, 0) !important;
+            }
+        </style>
+    </head>
+    <body style="cursor: auto;">
+        <div class="loader" style="display: none;">Loading Spritz...</div>
+        <div class="spritz-container" style="">
+            <div id="spritzlet" data-role="spritzer" class="spritzer">
+                <div class="spritzer-alert"></div>
+                <div class="spritzer-container spritzer-speedselect-select">
+                    <div class="spritzer-header">
+                        <a class="spritzer-logo" href="http://www.spritzinc.com" target="_blank"></a><a class="spritzer-login-btn spritzer-isLoggedin">Login</a>
+                        <div class="spritzer-user">
+                            <div class="spritzer-dropdown-toggle spritzer-user-btn spritzer-isLoggedout">
+                                <div class="spritzer-dropdown-label spritzer-user_text">Upgrade</div>
+                                <span class="spritzer-dropdown-caret"></span>
+                                <ul class="spritzer-dropdown-menu spritzer-user-list" style="display: none;">
+                                    <li class="spritzer-logout-btn">Payment</li>
+                                    <li class="spritzer-logout-btn">Logout</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="project_images-item">
-                            <img src="img/project-2.jpg" alt="">
+                        <span class="spritzer-close">×</span>
+                    </div>
+                    <div class="spritzer-loading-overlay"></div>
+                    <div class="spritzer-preloaded spritzer-btn-pause"></div>
+                    <div class="spritzer-canvas-container"><canvas class="spritzer-canvas" width="498" height="110"></canvas></div>
+                    <div class="spritzer-controls-container">
+                        <div class="spritzer-speed spritzer-range-container" style="display: block;">
+                            <div class="spritzer-login-alert" style="display: none;">You have to login and subscribe to go above 100 wpm.</div>
+                            <button class="wpm-btn wpm-decrement" title="Decrease by 10 wpm">−</button>
+                            <div class="slider" style="position: relative; user-select: none; box-sizing: border-box; min-height: 18px; margin-left: 9px; margin-right: 9px;">
+                                <div class="track" style="position: absolute; top: 50%; user-select: none; cursor: pointer; width: 100%; margin-top: -2px;"></div>
+                                <div class="highlight-track" style="position: absolute; top: 50%; user-select: none; cursor: pointer; width: 12.4121px; margin-top: -2px;"></div>
+                                <div class="dragger" style="position: absolute; top: 50%; user-select: none; cursor: pointer; margin-top: -9px; margin-left: -9px; left: 12.4121px;"></div>
+                            </div>
+                            <input type="text" data-slider="true" value="250" data-slider-range="5,1000" data-slider-step="5" data-slider-highlight="true" style="display: none;" />
+                            <button class="wpm-btn wpm-increment" title="Increase by 10 wpm">+</button><span class="spritzer-output">100 wpm</span>
                         </div>
-                    </div>
-                </div>
-                <div class="project__item">
-                    <div class="project__name">
-                        ДОМ #1
-                    </div>
-                    <div class="project__size">
-                        Размер дома: 6 x 6
-                    </div>
-                    <div class="project__area">
-                        Общая площадь дома: 54 кв. м
-                    </div>
-                    <div class="project__price">
-                        Стоимость - 402 000 рублей
-                    </div>
-                    <div class="project_images">
-                        <div class="project_images-item">
-                            <img src="img/project-1.jpg" alt="">
+                        <div class="spritzer-speed" data-role="select">
+                            <div class="spritzer-dropdown-toggle spritzer-speed-btn">
+                                <div class="spritzer-dropdown-label spritzer-speed_text"><span class="selectOptionLabel" value="100">100 wpm</span></div>
+                                <span class="spritzer-dropdown-caret"></span>
+                                <ul class="spritzer-dropdown-menu spritzer-speed-list" style="display: none;">
+                                    <li class="selectOption spritzer-selected" value="100"><span class="selectOptionLabel" value="100">100 wpm</span></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="project_images-item">
-                            <img src="img/project-2.jpg" alt="">
+                        <div class="spritzer-preload spritzer-btn-pause">a</div>
+                        <div class="spritzer-button-container spritzer-btns-4">
+                            <div class="spritzer-control-rewind" title="Back to Beginning"></div>
+                            <div class="spritzer-control-back" title="Previous Sentence"></div>
+                            <div class="spritzer-control-pauseplay spritzer-control-play" title="Play"></div>
+                            <div class="spritzer-control-forward" title="Next Sentence"></div>
                         </div>
-                    </div>
-                </div>
-                <div class="project__item">
-                    <div class="project__name">
-                        ДОМ #1
-                    </div>
-                    <div class="project__size">
-                        Размер дома: 6 x 6
-                    </div>
-                    <div class="project__area">
-                        Общая площадь дома: 54 кв. м
-                    </div>
-                    <div class="project__price">
-                        Стоимость - 402 000 рублей
-                    </div>
-                    <div class="project_images">
-                        <div class="project_images-item">
-                            <img src="img/project-1.jpg" alt="">
-                        </div>
-                        <div class="project_images-item">
-                            <img src="img/project-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="download">
-                <img src="img/home-downloads.png" alt="">
-                <a href="#">СКАЧАТЬ ВЕСЬ КАТАЛОГ ДОМОВ</a>
-            </div>
-            <div class="container">
-                <div class="gallery">
-                    <div class="gallery__title">
-                        ФОТОГРАФИИ НАШИХ РАБОТ
-                    </div>
-                    <div class="gallery__text">
-                        некоторые фотографии построенных нами домов и бань из бруса
-                    </div>
-                    <div class="gallery__inner">
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                        <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                    </div>
-                    <div class="main__img">
-                        <img src="img/main-img.png" alt="">
+                        <div class="spritzer-force-font" style="font-family: SpritzMedienMedium;">.</div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <a class="footer__phone" href="tel:+75852772217">+7 585 277-22-17</a>
-            <div class="footer__email">
-                namename@gmail.com
-            </div>
-        </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+        <div class="force-font">.</div>
+        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://sdk.spritzinc.com/bookmarklet/latest/js/SpritzBookmarklet.js?1.1.15"></script>
+        <script type="text/javascript">
+            !(function (a, b, c, d, e, f, g) {
+                (a.GoogleAnalyticsObject = e),
+                    (a[e] =
+                        a[e] ||
+                        function () {
+                            (a[e].q = a[e].q || []).push(arguments);
+                        }),
+                    (a[e].l = 1 * new Date()),
+                    (f = b.createElement(c)),
+                    (g = b.getElementsByTagName(c)[0]),
+                    (f.async = 1),
+                    (f.src = d),
+                    g.parentNode.insertBefore(f, g);
+            })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"),
+                ga("create", "UA-48307067-3", "auto", { allowLinker: !0 }),
+                ga("require", "linker"),
+                ga("require", "displayfeatures"),
+                ga("linker:autolink", ["spritzlet.com"]),
+                ga("send", "pageview");
+        </script>
+        <script type="text/javascript" charset="UTF-8" async="true" src="https://sdk.spritzinc.com/js/2.0.16/js/spritz.min.js?1.1.15" id="spritzjs"></script>
+    </body>
 </html>
