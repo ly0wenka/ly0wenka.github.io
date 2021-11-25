@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1030px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 180vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header__inner{
+    text-align: center;
+    width: 530px;
+    height: 530px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 10px solid #f4d4a5;
+    padding-top: 13px;
+    padding-bottom: 160px;
+    margin-left: 140px;
+}
+
+.header__name{
+    padding-top: 16px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #bf4200;
+}
+
+.header__phone .footer__phone{
+    font-weight: 300;
+    font-size: 35px;
+    margin-bottom: 40;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+.header__title{
+    text-transform: uppercase;
+    color: #1fad26;
+    font-weight: 700;
+    padding: 0px 5px;
+    font-size: 50px;
+}
+
+.header__sale{
+    margin-top: 40px;
+}
+
+.main{
+    text-align: center;
+    padding-top: 60px;
+}
+
+.main__title{
+    margin-bottom: 60px;
+    font-size: 41px;
+    color: #d07a2d;
+}
+
+.main__text{
+    font-size: 30px;
+}
+
+.main__img{
+    padding: 90px 0;
+}
+
+.project__title{
+    margin-bottom: 110px;
+    font-size: 41px;
+    color: #d0662d;
+    font-weight: 700;
+}
+.gallery__title{
+    text-transform: uppercase;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    font-weight: 700;
+    color: #d87a2d;
+    font-size: 41px;
+}
+.gallery__text{
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+.gallery__inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery__inner img{
+    display: block;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer .phone{
+    font-weight: 700;
+}
+
+.footer__email{
+    padding-top: 40px;
+    padding-bottom:  150px;
+    color: #2f8bc5;
+    /* text-decoration: underline; */
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    border-bottom: 1px solid #000;
+}
