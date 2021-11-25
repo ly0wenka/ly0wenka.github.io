@@ -3,8 +3,8 @@
         <title>Spritz</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        <link id="spritz-css" href="https://sdk.spritzinc.com/js/2.0.16/css/spritz.min.css?1.1.15" rel="stylesheet" type="text/css" />
-        <link href="spritz.css?__inline=true" rel="stylesheet" type="text/css" />
+        <link id="spritz-css" href="css/spritz.css" rel="stylesheet" type="text/css" />
+        <link href="css/spritz.min.css?__inline=true" rel="stylesheet" type="text/css" />
         <style>
             .flipX video::-webkit-media-text-track-display {
                 transform: matrix(-1, 0, 0, 1, 0, 0) !important;
@@ -23,20 +23,6 @@
             <div id="spritzlet" data-role="spritzer" class="spritzer">
                 <div class="spritzer-alert"></div>
                 <div class="spritzer-container spritzer-speedselect-select">
-                    <div class="spritzer-header">
-                        <a class="spritzer-logo" href="http://www.spritzinc.com" target="_blank"></a><a class="spritzer-login-btn spritzer-isLoggedin">Login</a>
-                        <div class="spritzer-user">
-                            <div class="spritzer-dropdown-toggle spritzer-user-btn spritzer-isLoggedout">
-                                <div class="spritzer-dropdown-label spritzer-user_text">Upgrade</div>
-                                <span class="spritzer-dropdown-caret"></span>
-                                <ul class="spritzer-dropdown-menu spritzer-user-list" style="display: none;">
-                                    <li class="spritzer-logout-btn">Payment</li>
-                                    <li class="spritzer-logout-btn">Logout</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <span class="spritzer-close">×</span>
-                    </div>
                     <div class="spritzer-loading-overlay"></div>
                     <div class="spritzer-preloaded spritzer-btn-pause"></div>
                     <div class="spritzer-canvas-container"><canvas class="spritzer-canvas" width="498" height="110"></canvas></div>
@@ -73,31 +59,10 @@
                 </div>
             </div>
         </div>
+		<div>dasdasdasd</div>
         <div class="force-font">.</div>
-        <script async="" src="//www.google-analytics.com/analytics.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="spritz.js"></script>
-        <script type="text/javascript">
-            !(function (a, b, c, d, e, f, g) {
-                (a.GoogleAnalyticsObject = e),
-                    (a[e] =
-                        a[e] ||
-                        function () {
-                            (a[e].q = a[e].q || []).push(arguments);
-                        }),
-                    (a[e].l = 1 * new Date()),
-                    (f = b.createElement(c)),
-                    (g = b.getElementsByTagName(c)[0]),
-                    (f.async = 1),
-                    (f.src = d),
-                    g.parentNode.insertBefore(f, g);
-            })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"),
-                ga("create", "UA-48307067-3", "auto", { allowLinker: !0 }),
-                ga("require", "linker"),
-                ga("require", "displayfeatures"),
-                ga("linker:autolink", ["spritzlet.com"]),
-                ga("send", "pageview");
-        </script>
-        <script type="text/javascript" charset="UTF-8" async="true" src="spritz.js" id="spritzjs"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/spritz.new.js"></script>
+        <script type="text/javascript" charset="UTF-8" async="true" src="js/spritz.new.js" id="spritzjs"></script>
     </body>
 </html>
